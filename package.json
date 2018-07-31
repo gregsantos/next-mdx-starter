@@ -1,0 +1,31 @@
+{
+  "name": "next-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "dependencies": {
+    "@mdx-js/loader": "^0.15.0-1",
+    "@zeit/next-css": "^0.2.0",
+    "@zeit/next-mdx": "^1.1.0",
+    "babel-plugin-styled-components": "^1.5.1",
+    "next": "^6.1.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-typography": "^0.16.13",
+    "rebass": "2.0.1",
+    "remark-emoji": "^2.0.1",
+    "remark-images": "^0.8.1",
+    "styled-components": "^3.3.3",
+    "typography": "^0.16.17",
+    "typography-theme-sutro": "^0.15.10"
+  },
+  "devDependencies": {
+    "@mdx-js/mdx": "^0.15.0-1"
+  }
+}
