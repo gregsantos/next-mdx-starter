@@ -1,3 +1,4 @@
+import React from "react";
 import { Provider, Toolbar, Fixed, Container, Panel } from "rebass";
 import { injectGlobal } from "styled-components";
 import Header from "./Header";
@@ -10,7 +11,7 @@ injectGlobal`
 `;
 
 export default ({ children }) => (
-  <div>
+  <React.Fragment>
     <Provider>
       <Header />
       <Container maxWidth="51em" pt="2em">
@@ -22,5 +23,5 @@ export default ({ children }) => (
         </Panel.Footer>
       </Fixed>
     </Provider>
-  </div>
+  </React.Fragment>
 );
