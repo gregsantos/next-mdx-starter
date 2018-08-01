@@ -16,12 +16,11 @@ const HomePage = ({ quote, character, image }) => (
 HomePage.getInitialProps = async ({ req }) => {
   const res = await fetch("https://thesimpsonsquoteapi.glitch.me/quotes");
   const json = await res.json();
-  const quoteData = json[0];
-  console.log(quoteData);
+  const { quote, character, image } = json[0];
   return {
-    quote: quoteData.quote,
-    character: quoteData.character,
-    image: quoteData.image
+    quote,
+    character,
+    image
   };
 };
 
