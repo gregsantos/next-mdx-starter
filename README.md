@@ -1,43 +1,32 @@
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/zeit/next.js/tree/master/examples/with-rebass)
+# A sturdy and nimble base for Next.js projects.
 
-# Example app with Rebass
+[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/gregsantos/next-mdx-starter)
 
-![Screenshot](https://cloud.githubusercontent.com/assets/304265/22472564/b2e04ff0-e7de-11e6-921e-d0c9833ac805.png)
+Out of the box, we get:
 
-## How to use
+- Automatic transpilation and bundling (with webpack and babel)
+- Hot code reloading
+- Server rendering and indexing of ./pages
+- Static file serving. ./static/ is mapped to /static/
+- Beautiful typography and defaults
+- Component library and design system with css-in-js
 
-### Using `create-next-app`
+## Text and defaults courtesy of [Typography.js](https://kyleamathews.github.io/typography.js/)
 
-Download [`create-next-app`](https://github.com/segmentio/create-next-app) to bootstrap the example:
+A powerful toolkit for building websites with beautiful design.
 
-```
-npm i -g create-next-app
-create-next-app --example with-rebass with-rebass-app
-```
+## Rebass and styled-components
 
-### Download manually
+[Rebass](https://github.com/jxnblk/rebass) : React UI component library & design system, built with styled-components and styled-system.
 
-Download the example [or clone the repo](https://github.com/zeit/next.js):
+[styled-components](https://github.com/styled-components/styled-components) : Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress
 
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-rebass
-cd with-rebass
-```
+### Download, Customize, and Deploy
 
-Install it and run:
-
-```bash
-npm install
-ln -f -s ../node_modules/react-md/dist/react-md.light_blue-yellow.min.css static/react-md.light_blue-yellow.min.css
-npm run dev
-```
+Download the example [or clone the repo](https://github.com/gregsantos/next-mdx-starter):
 
 Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download))
 
 ```bash
 now
 ```
-
-## The idea behind the example
-
-This example features how you use [Rebass](http://jxnblk.com/rebass/) functional UI library with Next.js.
