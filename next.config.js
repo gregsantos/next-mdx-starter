@@ -1,9 +1,9 @@
 // Add next.config.js to extend usage of webpack with loaders, plugins, etc
-const withCSS = require("@zeit/next-css");
+// const withCSS = require("@zeit/next-css");
 const images = require("remark-images");
 const emoji = require("remark-emoji");
 
-module.exports = withCSS({
+module.exports = {
   pageExtensions: ["js", "jsx", "md", "mdx"],
   webpack: (config, { defaultLoaders }) => {
     config.module.rules.push({
@@ -27,4 +27,4 @@ module.exports = withCSS({
     // Important: return the modified config
     return config;
   }
-});
+};
