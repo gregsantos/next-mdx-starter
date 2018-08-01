@@ -21,7 +21,7 @@ const Header = ({ router: { pathname } }) => (
       </Link>
       <Link prefetch href="/hello2">
         <NavLink className={pathname === "/hello2" ? "is-active" : ""}>
-          Hello2
+          Markdown
         </NavLink>
       </Link>
     </Toolbar>
