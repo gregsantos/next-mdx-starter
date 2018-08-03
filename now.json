@@ -3,8 +3,6 @@
   "type": "static",
   "public": true,
   "env": {
-    "SECRET": "@my-secret-key",
-    "ANOTHER_SECRET": "@my-other-secret-key",
-    "SECRET_FAIL": "@this-is-not-defined"
+    "SECRET": "@my-secret"
   }
 }

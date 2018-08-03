@@ -1,5 +1,4 @@
 // Add next.config.js to extend usage of webpack with loaders, plugins, etc
-// const withCSS = require("@zeit/next-css");
 const images = require("remark-images");
 const emoji = require("remark-emoji");
 const webpack = require("webpack");
@@ -11,9 +10,7 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 console.log({
-  SECRET: process.env.SECRET,
-  ANOTHER_SECRET: process.env.ANOTHER_SECRET,
-  SECRET_FAIL: process.env.SECRET_FAIL
+  SECRET: process.env.SECRET
 });
 
 /**
